@@ -469,9 +469,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1355283916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 641be84282456d14ea3b6df847ab9b9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d6d9a289d2f67f48b579348d117c341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  draggablePrefab: {fileID: 6792128389623193321, guid: 1444491f3781fda41bd0637c37faf48e, type: 3}
+  parentOfDraggable: {fileID: 968138837}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
