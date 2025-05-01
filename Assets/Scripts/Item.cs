@@ -46,7 +46,10 @@ public class Item : ScriptableObject
 public enum ItemCategory
 {
     Fruit,
-    Veggie
+    Veggie,
+    Meat,
+    Fluid,
+    Miscelanous
 }
 
 public enum ItemHasTrait
