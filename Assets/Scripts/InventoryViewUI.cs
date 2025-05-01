@@ -15,6 +15,7 @@ public class InventoryViewUI : MonoBehaviour
     [SerializeField] private int ItemsPerPage;
     [Header("Prefabs")]
     [SerializeField] private GameObject itemUIPrefab;
+    [SerializeField] private GameObject buttonPagePrefab;
 
 
     private InventoryManager inventoryManager;
@@ -24,43 +25,54 @@ public class InventoryViewUI : MonoBehaviour
     {
         inventoryManager = FindAnyObjectByType<InventoryManager>();
         currentPage = 0;
-        maxPage = Mathf.CeilToInt((float)(inventoryManager.GetInventory().Count / ItemsPerPage));
+        maxPage = Mathf.CeilToInt((float)inventoryManager.GetInventory().Count / ItemsPerPage);
 
         UpdatePage();
+
+        PopulatePageView();
+    }
+
+    private void PopulatePageView()
+    {
+        for(int i=0;i<maxPage;i++)
+        {
+            GameObject button = Instantiate(buttonPagePrefab);
+            button.transform.SetParent(pageView.transform.GetChild(0), false);
+            int page = i;
+            button.GetComponent<Button>().onClick.AddListener(
+                () => SetPage(page)
+                );
+        }
     }
 
     public void NextPage()
     {
-        currentPage++;
-        CheckPage();
+        SetPage(currentPage+1);
     }
 
     public void PreviousPage()
     {
-        currentPage--;
-        CheckPage();
+        SetPage(currentPage-1);
     }
 
     public void SetPage(int page)
     {
         currentPage = page;
+        Debug.Log("Current Page:" + page);
         CheckPage();
+        UpdatePage();
     }
 
     public void UpdatePage()
     {
         var inventory = inventoryManager.GetInventory();
 
-        Debug.Log(itemView == null);
-
         while (itemView.transform.childCount > 0)
         {
-            Destroy(itemView.transform.GetChild(0).gameObject);
+            DestroyImmediate(itemView.transform.GetChild(0).gameObject);
         }
 
-        Debug.Log("Inventory size: "+inventory.Count);
-
-        for(int i=0;i<ItemsPerPage;i++)
+        for (int i=0;i<ItemsPerPage;i++)
         {
             int itemIndex = i + (currentPage * ItemsPerPage);
             if (itemIndex >= inventory.Count)
@@ -68,15 +80,11 @@ public class InventoryViewUI : MonoBehaviour
 
             KeyValuePair<Item,int> pair = inventory.ElementAt(itemIndex);
 
-            Debug.Log("Item:" + pair.Key.Name);
-
             GameObject itemUI = Instantiate(itemUIPrefab);
             itemUI.transform.SetParent(itemView.transform, false);
             itemUI.GetComponent<ItemHolder>().SetItem(pair.Key);
             itemUI.GetComponent<Image>().sprite = pair.Key.Image;
             itemUI.GetComponentInChildren<TextMeshProUGUI>().text = pair.Value.ToString();
-
-            Debug.Log(i);
         }
     }
 

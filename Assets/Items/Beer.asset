@@ -20,7 +20,7 @@ MonoBehaviour:
   MagiminsC: 0
   MagiminsD: 0
   MagiminsE: 6
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: e0a7fb47c7111464f866363e7a3f47da, type: 3}
   Taste: 0
   Sensation: 0
   Armora: 1
