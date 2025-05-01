@@ -994,6 +994,7 @@ GameObject:
   - component: {fileID: 606714167}
   - component: {fileID: 606714166}
   - component: {fileID: 606714165}
+  - component: {fileID: 606714168}
   m_Layer: 5
   m_Name: ButtonE
   m_TagString: Untagged
@@ -1064,7 +1065,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 606714166}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 606714168}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleMagimins
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &606714166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,6 +1128,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606714163}
   m_CullTransparentMesh: 1
+--- !u!114 &606714168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606714163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &686518557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1478,7 @@ GameObject:
   - component: {fileID: 959487048}
   - component: {fileID: 959487047}
   - component: {fileID: 959487046}
+  - component: {fileID: 959487049}
   m_Layer: 5
   m_Name: ButtonC
   m_TagString: Untagged
@@ -1511,7 +1549,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 959487047}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 959487049}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleMagimins
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &959487047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,6 +1612,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959487044}
   m_CullTransparentMesh: 1
+--- !u!114 &959487049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959487044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &968138833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,6 +1807,7 @@ GameObject:
   - component: {fileID: 1125309449}
   - component: {fileID: 1125309448}
   - component: {fileID: 1125309447}
+  - component: {fileID: 1125309450}
   m_Layer: 5
   m_Name: ButtonB
   m_TagString: Untagged
@@ -1803,7 +1878,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1125309448}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1125309450}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleMagimins
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1125309448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1842,6 +1941,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125309445}
   m_CullTransparentMesh: 1
+--- !u!114 &1125309450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125309445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1235183920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,6 +2433,7 @@ GameObject:
   - component: {fileID: 1451694973}
   - component: {fileID: 1451694972}
   - component: {fileID: 1451694971}
+  - component: {fileID: 1451694974}
   m_Layer: 5
   m_Name: ButtonTaste
   m_TagString: Untagged
@@ -2392,7 +2504,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1451694972}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1451694974}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleTrait
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1451694972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2431,6 +2567,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451694969}
   m_CullTransparentMesh: 1
+--- !u!114 &1451694974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451694969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1466676685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2591,7 @@ GameObject:
   - component: {fileID: 1466676689}
   - component: {fileID: 1466676688}
   - component: {fileID: 1466676687}
+  - component: {fileID: 1466676690}
   m_Layer: 5
   m_Name: ButtonVisual
   m_TagString: Untagged
@@ -2513,7 +2662,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1466676688}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1466676690}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleTrait
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1466676688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2552,6 +2725,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466676685}
   m_CullTransparentMesh: 1
+--- !u!114 &1466676690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466676685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1493932265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,6 +2883,7 @@ GameObject:
   - component: {fileID: 1496917609}
   - component: {fileID: 1496917608}
   - component: {fileID: 1496917607}
+  - component: {fileID: 1496917610}
   m_Layer: 5
   m_Name: ButtonSensation
   m_TagString: Untagged
@@ -2768,7 +2954,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1496917608}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1496917610}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleTrait
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1496917608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2807,6 +3017,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496917605}
   m_CullTransparentMesh: 1
+--- !u!114 &1496917610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496917605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1606393242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2953,6 +3175,7 @@ GameObject:
   - component: {fileID: 1649005924}
   - component: {fileID: 1649005923}
   - component: {fileID: 1649005922}
+  - component: {fileID: 1649005925}
   m_Layer: 5
   m_Name: ButtonAroma
   m_TagString: Untagged
@@ -3023,7 +3246,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1649005923}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1649005925}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleTrait
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1649005923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3062,6 +3309,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649005920}
   m_CullTransparentMesh: 1
+--- !u!114 &1649005925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649005920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1682644997
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,6 +3333,7 @@ GameObject:
   - component: {fileID: 1682645001}
   - component: {fileID: 1682645000}
   - component: {fileID: 1682644999}
+  - component: {fileID: 1682645002}
   m_Layer: 5
   m_Name: ButtonSound
   m_TagString: Untagged
@@ -3144,7 +3404,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1682645000}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1682645002}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleTrait
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1682645000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3183,6 +3467,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682644997}
   m_CullTransparentMesh: 1
+--- !u!114 &1682645002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682644997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1692728624
 GameObject:
   m_ObjectHideFlags: 0
@@ -3195,6 +3491,7 @@ GameObject:
   - component: {fileID: 1692728628}
   - component: {fileID: 1692728627}
   - component: {fileID: 1692728626}
+  - component: {fileID: 1692728629}
   m_Layer: 5
   m_Name: ButtonA
   m_TagString: Untagged
@@ -3265,7 +3562,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1692728627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1692728629}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleMagimins
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1692728627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3304,6 +3625,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692728624}
   m_CullTransparentMesh: 1
+--- !u!114 &1692728629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692728624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1715440247
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,7 +3783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -714.647, y: -105.277}
+  m_AnchoredPosition: {x: -714.65, y: -67.062}
   m_SizeDelta: {x: 490.705, y: 869.036}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724103802
@@ -3695,6 +4028,7 @@ GameObject:
   - component: {fileID: 2038263551}
   - component: {fileID: 2038263550}
   - component: {fileID: 2038263549}
+  - component: {fileID: 2038263552}
   m_Layer: 5
   m_Name: ButtonD
   m_TagString: Untagged
@@ -3765,7 +4099,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2038263550}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2038263552}
+        m_TargetAssemblyTypeName: FilterButtonUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1724103802}
+        m_TargetAssemblyTypeName: InventoryViewUI, Assembly-CSharp
+        m_MethodName: ToggleMagimins
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2038263550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3804,6 +4162,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038263547}
   m_CullTransparentMesh: 1
+--- !u!114 &2038263552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038263547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c354779e79c44792098d9c792f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2060002197
 GameObject:
   m_ObjectHideFlags: 0

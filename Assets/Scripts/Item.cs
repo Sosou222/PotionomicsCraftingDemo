@@ -41,6 +41,24 @@ public class Item : ScriptableObject
 
         return false;
     }
+
+    public bool HasGoodTrait(Trait trait)
+    {
+        switch (trait)
+        {
+            case Trait.Taste:
+                return Taste == ItemHasTrait.Good;
+            case Trait.Sensation:
+                return Sensation == ItemHasTrait.Good;
+            case Trait.Armora:
+                return Armora == ItemHasTrait.Good;
+            case Trait.Visual:
+                return Visual == ItemHasTrait.Good;
+            case Trait.Sound:
+                return Sound == ItemHasTrait.Good;
+        }
+        return false;
+    }
 }
 
 public enum ItemCategory
@@ -62,4 +80,9 @@ public enum ItemHasTrait
 public enum Magimins
 {
     A, B, C, D, E
+}
+
+public enum Trait
+{
+    Taste, Sensation, Armora, Visual, Sound
 }
