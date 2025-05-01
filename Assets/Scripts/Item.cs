@@ -23,6 +23,24 @@ public class Item : ScriptableObject
     public ItemHasTrait Visual;
     public ItemHasTrait Sound;
 
+    public bool HasMagimins(Magimins magimins)
+    {
+        switch (magimins)
+        {
+            case Magimins.A:
+                return MagiminsA > 0;
+            case Magimins.B:
+                return MagiminsB > 0;
+            case Magimins.C:
+                return MagiminsC > 0;
+            case Magimins.D:
+                return MagiminsD > 0;
+            case Magimins.E:
+                return MagiminsE > 0;
+        }
+
+        return false;
+    }
 }
 
 public enum ItemCategory
@@ -36,4 +54,9 @@ public enum ItemHasTrait
     None,
     Good,
     Bad
+}
+
+public enum Magimins
+{
+    A, B, C, D, E
 }

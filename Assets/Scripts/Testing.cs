@@ -14,4 +14,9 @@ public class Testing : MonoBehaviour
             inventoryManager.AddItem(item, Random.Range(1, 5));
         }
     }
+
+    public void Say()
+    {
+        Debug.Log("Say");
+    }
 }
