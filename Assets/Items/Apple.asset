@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a560630cb66ba4f94a4106734ec21d, type: 3}
   m_Name: Apple
   m_EditorClassIdentifier: 
-  Name: 
-  Category: 1
-  Description: 
-  MagiminsA: 0
+  Name: Apple
+  Category: 0
+  Description: A simple apple.
+  MagiminsA: 6
   MagiminsB: 0
   MagiminsC: 0
   MagiminsD: 0
   MagiminsE: 0
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 61d01e8616313344b978a6518fd86ed6, type: 3}
   Taste: 0
-  Sensation: 0
+  Sensation: 2
   Armora: 0
   Visual: 0
   Sound: 0

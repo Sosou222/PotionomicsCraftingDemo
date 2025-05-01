@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a560630cb66ba4f94a4106734ec21d, type: 3}
   m_Name: AppleWorm
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Apple Worm
   Category: 0
-  Description: 
-  MagiminsA: 0
-  MagiminsB: 0
+  Description: A apple infested by a worm.
+  MagiminsA: 6
+  MagiminsB: 3
   MagiminsC: 0
   MagiminsD: 0
   MagiminsE: 0
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 8fa37c2c8b9bd654c96a4fae10f387a1, type: 3}
   Taste: 0
   Sensation: 0
   Armora: 0
