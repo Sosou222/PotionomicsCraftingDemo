@@ -29,17 +29,19 @@ public class InventoryViewUI : MonoBehaviour
     {
         inventoryManager = FindAnyObjectByType<InventoryManager>();
         currentPage = 0;
-        maxPage = Mathf.CeilToInt((float)inventoryManager.GetInventory().Count / ItemsPerPage);
         checkForFilter = new CheckForFilter();
 
         UpdatePage();
-
-        PopulatePageView();
     }
 
     private void PopulatePageView()
     {
-        for(int i=0;i<maxPage;i++)
+        while (pageView.transform.GetChild(0).childCount > 0)
+        {
+            DestroyImmediate(pageView.transform.GetChild(0).GetChild(0).gameObject);
+        }
+
+        for (int i=0;i<maxPage;i++)
         {
             GameObject button = Instantiate(buttonPagePrefab);
             button.transform.SetParent(pageView.transform.GetChild(0), false);
@@ -68,9 +70,28 @@ public class InventoryViewUI : MonoBehaviour
         UpdatePage();
     }
 
+    private void SetMaxPage(int inventoryCount)
+    {
+        if(inventoryCount == 0)
+        {
+            maxPage = 1;
+        }
+        else
+        {
+            maxPage = Mathf.CeilToInt((float)inventoryCount / ItemsPerPage);
+        }
+        if(currentPage >= maxPage)
+        {
+            SetPage(0);
+        }
+    }
+
     public void UpdatePage()
     {
         var inventory = GetFilteredItems();
+
+        SetMaxPage(inventory.Count);
+        PopulatePageView();
 
         while (itemView.transform.childCount > 0)
         {
