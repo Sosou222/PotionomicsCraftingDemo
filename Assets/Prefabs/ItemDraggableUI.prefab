@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5989230319193781090}
   - component: {fileID: 5919704063462822048}
   - component: {fileID: 2783711945664049073}
+  - component: {fileID: 7443328707091147467}
   m_Layer: 5
   m_Name: ItemDraggableUI
   m_TagString: Untagged
@@ -101,3 +102,15 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7443328707091147467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6792128389623193321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423bb67813dd42340993e615e629e5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

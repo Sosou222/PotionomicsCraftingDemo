@@ -16,24 +16,20 @@ public class DraggableItemUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private void Start()
     {
         beginParent = transform.parent;
-        Debug.Log("Begin Parent:" + beginParent.gameObject.name);
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Begin Drag");
         transform.SetParent(beginParent, true);
         canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("Dragging");
         transform.position = Input.mousePosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("End Drag");
         canvasGroup.blocksRaycasts = true;
         if(beginParent == transform.parent)
         {

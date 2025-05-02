@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class SpawnDraggableUI : MonoBehaviour, IInitializePotentialDragHandler,IDragHandler
 {
@@ -12,6 +13,10 @@ public class SpawnDraggableUI : MonoBehaviour, IInitializePotentialDragHandler,I
         Debug.Log("Initalizaing Potenital Drag");
         GameObject draggable = Instantiate(draggablePrefab);
         draggable.transform.SetParent(transform.root, false); //Set parent to canvas
+
+        Item item = GetComponent<ItemHolder>().GetItem();
+        draggable.GetComponent<ItemHolder>().SetItem(item);
+        draggable.GetComponent<Image>().sprite = item.Image;
 
         eventData.pointerDrag = draggable;
     }
