@@ -33,6 +33,9 @@ public class DraggableItemUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         canvasGroup.blocksRaycasts = true;
         if(beginParent == transform.parent)
         {
+            Item item = GetComponent<ItemHolder>().GetItem();
+            InventoryManager.Instance.AddItem(item, 1);
+
             Destroy(transform.gameObject);
         }
     }

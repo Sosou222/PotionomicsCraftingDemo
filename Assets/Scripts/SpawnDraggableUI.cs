@@ -18,6 +18,8 @@ public class SpawnDraggableUI : MonoBehaviour, IInitializePotentialDragHandler,I
         draggable.GetComponent<ItemHolder>().SetItem(item);
         draggable.GetComponent<Image>().sprite = item.Image;
 
+        InventoryManager.Instance.RemoveItem(item, 1);
+
         eventData.pointerDrag = draggable;
     }
 

@@ -31,6 +31,8 @@ public class InventoryViewUI : MonoBehaviour
         currentPage = 0;
         checkForFilter = new CheckForFilter();
 
+        InventoryManager.Instance.OnInventoryUpdate += (obj, e) => UpdatePage();
+
         UpdatePage();
     }
 

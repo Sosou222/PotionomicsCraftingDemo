@@ -8,10 +8,9 @@ public class Testing : MonoBehaviour
 
     void Start()
     {
-        InventoryManager inventoryManager = FindAnyObjectByType<InventoryManager>();
         foreach(Item item in itemList)
         {
-            inventoryManager.AddItem(item, Random.Range(1, 5));
+            InventoryManager.Instance.AddItem(item, Random.Range(1, 5));
         }
     }
 
