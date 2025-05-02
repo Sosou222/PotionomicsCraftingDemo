@@ -59,6 +59,43 @@ public class Item : ScriptableObject
         }
         return false;
     }
+
+    public bool HasNegativeTrait(Trait trait)
+    {
+        switch (trait)
+        {
+            case Trait.Taste:
+                return Taste == ItemHasTrait.Bad;
+            case Trait.Sensation:
+                return Sensation == ItemHasTrait.Bad;
+            case Trait.Armora:
+                return Armora == ItemHasTrait.Bad;
+            case Trait.Visual:
+                return Visual == ItemHasTrait.Bad;
+            case Trait.Sound:
+                return Sound == ItemHasTrait.Bad;
+        }
+        return false;
+    }
+
+    public int GetMagiminsCountOfType(Magimins magimins)
+    {
+        switch (magimins) 
+        {
+            case Magimins.A:
+                return MagiminsA;
+            case Magimins.B:
+                return MagiminsB;
+            case Magimins.C:
+                return MagiminsC;
+            case Magimins.D:
+                return MagiminsD;
+            case Magimins.E:
+                return MagiminsE;
+        }
+
+        return -1;
+    }
 }
 
 public enum ItemCategory
