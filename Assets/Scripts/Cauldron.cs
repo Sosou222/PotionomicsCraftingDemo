@@ -45,4 +45,9 @@ public class Cauldron : MonoBehaviour
         }
         return total;
     }
+    
+    public int GetIngredientCount()
+    {
+        return transform.childCount;
+    }
 }
