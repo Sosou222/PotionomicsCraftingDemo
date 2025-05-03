@@ -11,12 +11,21 @@ public class PotionInfo : MonoBehaviour
     [SerializeField] private TextMeshProUGUI totalMagiminsText;
     [SerializeField] private TextMeshProUGUI totalIgridientsText;
     [SerializeField] private TextMeshProUGUI ratioText;
+    [SerializeField] private TextMeshProUGUI potionText;
     
-    public void UpdateInfo(int totalIngidients,int totalMagimins)
+    public void UpdateInfo(int totalIngidients,int totalMagimins,PotionRecipe recipe)
     {
         totalMagiminsText.text = "Total Magimins:" + totalIngidients;
         totalIgridientsText.text = "Total Igridients:" + totalMagimins;
         ratioText.text = totalMagimins + "/60";
+        if (recipe == null)
+        {
+            potionText.text = "None";
+        }
+        else
+        {
+            potionText.text = recipe.Name;
+        }
 
     }
 }
