@@ -1009,7 +1009,9 @@ MonoBehaviour:
   cauldron: {fileID: 764003317}
   potionInfo: {fileID: 777113818}
   magiminsLevel: {fileID: 1784026536}
-  recipesList: []
+  recipesList:
+  - {fileID: 11400000, guid: 35420df75f9a37942bc2ae53d543db4b, type: 2}
+  - {fileID: 11400000, guid: 4f820cfa5f021ae42aea63c4c5b6f656, type: 2}
 --- !u!1 &232351353
 GameObject:
   m_ObjectHideFlags: 0
@@ -3899,6 +3901,7 @@ MonoBehaviour:
   totalMagiminsText: {fileID: 1585391360}
   totalIgridientsText: {fileID: 174752437}
   ratioText: {fileID: 1189604848}
+  potionText: {fileID: 1447662833}
 --- !u!1 &787539529
 GameObject:
   m_ObjectHideFlags: 0
