@@ -26,5 +26,9 @@ public class PotionMaker : MonoBehaviour
 
             magiminsLevel.UpdateMagiminOfType(magimin,procentage, magCount);
         }
+
+        int totalIgridients = cauldron.GetIngredientCount();
+
+        potionInfo.UpdateInfo(totalIgridients, total);
     }
 }
