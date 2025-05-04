@@ -1010,8 +1010,26 @@ MonoBehaviour:
   potionInfo: {fileID: 777113818}
   magiminsLevel: {fileID: 1784026536}
   recipesList:
+  - {fileID: 11400000, guid: 8c8af232d63160c4ba545d0565278777, type: 2}
+  - {fileID: 11400000, guid: ea69d7ecef5ce5545b3e54281eb088a6, type: 2}
+  - {fileID: 11400000, guid: 5c7a5130400c8774392ee971b3a4163a, type: 2}
+  - {fileID: 11400000, guid: d6a4c1da37c473346bc0f12c5a18c4a3, type: 2}
   - {fileID: 11400000, guid: 35420df75f9a37942bc2ae53d543db4b, type: 2}
   - {fileID: 11400000, guid: 4f820cfa5f021ae42aea63c4c5b6f656, type: 2}
+  - {fileID: 11400000, guid: 2151473914a75644aa0b7c49cbc1529e, type: 2}
+  - {fileID: 11400000, guid: d3d3462c4aa8f3e4aa4c7bc030ff0aae, type: 2}
+  - {fileID: 11400000, guid: d238c1f58d0c792478af793f9239069a, type: 2}
+  - {fileID: 11400000, guid: fc141b3daec20e84aa84163618a1eade, type: 2}
+  - {fileID: 11400000, guid: e54a5bc6c51d0f24392944e6c8dd22c7, type: 2}
+  - {fileID: 11400000, guid: 7946fd9f6d172d14c8f6dfc51e6f55bd, type: 2}
+  - {fileID: 11400000, guid: 5ad214e519eac614b9e5e931f654222e, type: 2}
+  - {fileID: 11400000, guid: dd324c3d8386daa409186c1c77e9c44b, type: 2}
+  - {fileID: 11400000, guid: 948badfecdf47bc44b70317c6fde5b5d, type: 2}
+  - {fileID: 11400000, guid: 738ebd4efa71c8644a76ff9c1736d6fb, type: 2}
+  - {fileID: 11400000, guid: 87dc91b0f31d2af49b3f1e354a587efc, type: 2}
+  - {fileID: 11400000, guid: 263fbef25c09fa14a8d416499a9a5643, type: 2}
+  - {fileID: 11400000, guid: 2d25b24b7b6da9e4c82325ab4d37e14d, type: 2}
+  - {fileID: 11400000, guid: 1624f7c38684bf14a88bd80a452bec34, type: 2}
 --- !u!1 &232351353
 GameObject:
   m_ObjectHideFlags: 0
